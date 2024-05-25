@@ -22,22 +22,36 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <div class="header-menu-and-logo">
+        <div class="header-nav-and-logo">
           <a class="header-logo" href="./index.html"
-            ><svg width="44" height="39">
-              <use href="./images/logo.svg"></use>
-            </svg>
+            ><img
+              class="header-logo-img"
+              src="./images/logo.svg"
+              alt="logo"
+              width="44"
+              height="39"
+            />
           </a>
           <nav class="header-navigation">
             <ul class="header-nav-list">
-              <li class="header-nav-list-item"><a href="">about us</a></li>
               <li class="header-nav-list-item">
-                <a href="">our collection</a>
+                <a class="header-nav-list-link" href="#about-us">about us</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="">customer order</a>
+                <a class="header-nav-list-link" href="#our-collection"
+                  >our collection</a
+                >
               </li>
-              <li class="header-nav-list-item"><a href="">testimonials</a></li>
+              <li class="header-nav-list-item">
+                <a class="header-nav-list-link" href="#customer-order"
+                  >customer order</a
+                >
+              </li>
+              <li class="header-nav-list-item">
+                <a class="header-nav-list-link" href="#testimonials"
+                  >testimonials</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -49,7 +63,11 @@
           </address>
           <ul class="header-social-list">
             <li class="header-social-list-item">
-              <a href="" class="header-social-link">
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                class="header-social-link"
+              >
                 <svg class="social-svg" width="44" height="44">
                   <use
                     class="social-icon"
@@ -59,7 +77,11 @@
               </a>
             </li>
             <li class="header-social-list-item">
-              <a href="" class="header-social-link">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                class="header-social-link"
+              >
                 <svg class="social-svg" width="44" height="44">
                   <use
                     class="social-icon"
@@ -69,7 +91,11 @@
               </a>
             </li>
             <li class="header-social-list-item">
-              <a href="" class="header-social-link">
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                class="header-social-link"
+              >
                 <svg class="social-svg" width="44" height="44">
                   <use
                     class="social-icon"
@@ -79,11 +105,19 @@
               </a>
             </li>
           </ul>
+          <button class="burger" type="button">
+            <svg class="burger-icon">
+              <use
+                class="burger-svg"
+                href="./images/sprite.svg#icon-burger"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
 
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero-container container">
         <img
           class="hero-image"
@@ -137,6 +171,7 @@
             </p>
           </div>
         </div>
+
         <img
           src="./images/girl-and-boy.jpg"
           alt="girl and boy"
@@ -144,6 +179,166 @@
           height="545"
         />
       </div>
+      <img
+        class="about-us-background-image"
+        src="./images/arnament-grey.svg"
+        width="545"
+        height="484"
+        alt="arnament"
+      />
     </section>
+
+    <section class="our-collection">
+      <div class="our-collection-container container">
+        <h2 class="our-collection-header">Our collection</h2>
+        <ul class="our-collection-list">
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 63.jpg"
+              alt="AUGUST Poltava women's blouseRING"
+            />
+            <p class="our-collection-name">AUGUST Poltava women's blouseRING</p>
+            <p class="our-collection-price">3300 UAH</p>
+          </li>
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 64.jpg"
+              alt="Women's blouse Gorgany"
+              width="380"
+              height="430"
+            />
+            <p class="our-collection-name">Women's blouse Gorgany</p>
+            <p class="our-collection-price">3350 UAH</p>
+          </li>
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 65.jpg"
+              alt="Women's blouse Crimea"
+              width="380"
+              height="430"
+            />
+            <p class="our-collection-name">Women's blouse Crimea</p>
+            <p class="our-collection-price">4000 UAH</p>
+          </li>
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 63-1.jpg"
+              alt="Men's shirt Verkhovina"
+              width="380"
+              height="430"
+            />
+            <p class="our-collection-name">Men's shirt Verkhovina</p>
+            <p class="our-collection-price">3100 UAH</p>
+          </li>
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 64-1.jpg"
+              alt="Mountain men's shirt"
+              width="380"
+              height="430"
+            />
+            <p class="our-collection-name">Mountain men's shirt</p>
+            <p class="our-collection-price">3300 UAH</p>
+          </li>
+          <li class="our-collection-list-item">
+            <img
+              src="./images/image 65-1.jpg"
+              alt="Men's shirt Yasen"
+              width="380"
+              height="430"
+            />
+            <p class="our-collection-name">Men's shirt Yasen</p>
+            <p class="our-collection-price">1700 UAH</p>
+          </li>
+        </ul>
+        <img
+          class="our-collection-bacground-image"
+          src="./images/arnament-yellow.svg"
+          alt="arnament-yellow"
+          width="338"
+          height="300"
+        />
+      </div>
+      <img class="big-image" src="./images/image.jpg" alt="big-image" />
+    </section>
+
+    <section class="your-orders">
+      <div class="your-orders-container container">
+        <img src="./images/Rectangle 42481.jpg" alt="girl image" width="588" />
+
+        <div>
+          <h2 class="your-orders-header">
+            <span class="accent">Your order</span> is our priority: Personalized
+            approach and quality of service
+          </h2>
+          <form class="your-orders-form">
+            <input
+              class="your-orders-form-input"
+              type="text"
+              placeholder="Enter your full name"
+            />
+            <input
+              class="your-orders-form-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <textarea
+              class="your-orders-form-input textarea"
+              placeholder="Comments"
+            ></textarea>
+            <button class="hero-btn form-btn" type="submit">
+              Send<svg class="hero-btn-arrow" width="24" height="17">
+                <use href="./images/sprite.svg#icon-button-arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <img
+        class="your-orders-background-image"
+        src="./images/arnament-grey.svg"
+        alt="arnament-grey"
+      />
+    </section> -->
+
+    <!-- <div class="mobile-menu is-open">
+      <div class="menu-container">
+        <div class="address-and-cross">
+          <address class="menu-address">
+            <a class="menu-address-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </address>
+          <button class="button-x" type="button" width="36" height="36">
+            <svg class="button-x-svg" width="36" height="36">
+              <use href="./images/sprite.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="menu-navigation">
+          <ul class="menu-nav-list">
+            <li class="menu-nav-list-item">
+              <a class="menu-nav-list-link" href="#about-us">about us</a>
+            </li>
+            <li class="menu-nav-list-item">
+              <a class="menu-nav-list-link" href="#our-collection"
+                >our collection</a
+              >
+            </li>
+            <li class="menu-nav-list-item">
+              <a class="menu-nav-list-link" href="#customer-order"
+                >customer order</a
+              >
+            </li>
+            <li class="menu-nav-list-item">
+              <a class="menu-nav-list-link" href="#testimonials"
+                >testimonials</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-arnament"></div>
+      </div>
+    </div> -->
   </body>
 </html>
